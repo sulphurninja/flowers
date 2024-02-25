@@ -8,7 +8,9 @@ import { ProductGrid } from "@/components/product-grid"
 import { ProductSort } from "@/components/product-sort"
 import WhatsappIcon from '../components/Whatsapp'
 import PhoneNumberHeading from '../components/PhoneNumber'
+import MapSection from '../components/Mapsection'
 import { url } from "inspector"
+import Link from "next/link"
 
 
 interface Props { }
@@ -38,6 +40,15 @@ export default async function Page() {
           <span className="text-amber-500">Export quality fresh cut flowers! </span> <br></br> We offer a wide selection, with All India delivery. Buy wholesale flowers for any occasion.
         </p>
       </div>
+      <div className=" flex  justify-center ">
+        <div  className="bg-amber-600 cursor-pointer hover:bg-amber-900 p-4 mt-4 rounded-xl">
+          <Link href='#catalogue' >
+          Explore Catalogue
+
+          </Link>
+        </div>
+
+      </div>
       <div>
 
         <main className="mx-auto mt-12 max-w-6xl ">
@@ -45,44 +56,44 @@ export default async function Page() {
             <img src="/gif.gif" className=" w-full object-cover rounded-2xl  opacity-50 " />
           </div>
           <section className="flex items-center flex-col rounded-2xl mt-12 border p-8 border-white shadow-sm mx-4 bg-black justify-between border-b dark:border-gray-800 relative">
-    <img src="/map.png" className="opacity-10 absolute h-full w-full object-contain" alt="Map Background" />
-    <div className="text-white text-center py-8">
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">Prasad Agro - Delivering Across India 🛫</h1>
-        <p className="mt-4 text-lg">
-            We specialize in delivering wholesale flowers to all states of India using efficient transportation modes.
-        </p>
-    </div>
-    <div className="items-center grid lg:grid-cols-2 grid-cols-1 mx-4 justify-between border-b border-gray-200 pb-4 pt-8 dark:border-gray-800">
-        <div className="text-center">
-            <img src="/rail.png" className="w-72 h-64 lg:ml-32" alt="Delivery by Rail" />
-            <h2 className="text-xl font-bold mb-2">Delivery by Rail</h2>
-            <p className="text-gray-300 w-1/8">
-                Our rail delivery ensures quick and reliable transportation, reaching every corner of the country.
-            </p>
-        </div>
-        <div className="text-center">
-            <img src="/air.png" className="w-72 h-64 lg:ml-32" alt="Delivery by Air" />
-            <h2 className="text-xl font-bold mb-2">Delivery by Air</h2>
-            <p className="text-gray-300 w-1/8">
-                For swift delivery, we utilize air transport, ensuring freshness and timely service to your doorstep.
-            </p>
-        </div>
-        <div className="text-center">
-            <img src="/sea.png" className="w-72 h-64 lg:ml-32 mb-4" alt="Delivery by Water" />
-            <h2 className="text-xl font-bold mb-2">Water Delivery 🚢</h2>
-            <p className="text-gray-300 w-1/8">
-                Introducing our water delivery service - a sustainable and efficient way to deliver freshness.
-            </p>
-        </div>
-        <div className="text-center">
-            <img src="/bus.png" className="w-96 h-64 lg:ml-32 mb-4" alt="Delivery by Water" />
-            <h2 className="text-xl font-bold mb-2">Delivery by Road 🚚</h2>
-            <p className="text-gray-300 w-1/8">
-            Our road delivery ensures reliable transportation, connecting all regions for timely and efficient service.
-            </p>
-        </div>
-    </div>
-</section>
+            <img src="/map.png" className="opacity-30 absolute h-full w-full object-contain" alt="Map Background" />
+            <div className="text-white text-center py-8">
+              <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">Prasad Agro - Delivering Across India 🛫</h1>
+              <p className="mt-4 text-lg">
+                We specialize in delivering wholesale flowers to all states of India using efficient transportation modes.
+              </p>
+            </div>
+            <div className="items-center grid lg:grid-cols-2 grid-cols-1 mx-4 justify-between border-b border-gray-200 pb-4 pt-8 dark:border-gray-800">
+              <div className="text-center">
+                <img src="/rail.png" className="w-72 h-64 lg:ml-32" alt="Delivery by Rail" />
+                <h2 className="text-xl font-bold mb-2">Delivery by Rail</h2>
+                <p className="text-gray-300 w-1/8">
+                  Our rail delivery ensures quick and reliable transportation, reaching every corner of the country.
+                </p>
+              </div>
+              <div className="text-center">
+                <img src="/air.png" className="w-72 h-64 lg:ml-32" alt="Delivery by Air" />
+                <h2 className="text-xl font-bold mb-2">Delivery by Air</h2>
+                <p className="text-gray-300 w-1/8">
+                  For swift delivery, we utilize air transport, ensuring freshness and timely service to your doorstep.
+                </p>
+              </div>
+              <div className="text-center">
+                <img src="/sea.png" className="w-72 h-64 lg:ml-32 mb-4" alt="Delivery by Water" />
+                <h2 className="text-xl font-bold mb-2">Water Delivery 🚢</h2>
+                <p className="text-gray-300 w-1/8">
+                  Introducing our water delivery service - a sustainable and efficient way to deliver freshness.
+                </p>
+              </div>
+              <div className="text-center">
+                <img src="/bus.png" className="w-96 h-64 lg:ml-32 mb-4" alt="Delivery by Water" />
+                <h2 className="text-xl font-bold mb-2">Delivery by Road 🚚</h2>
+                <p className="text-gray-300 w-1/8">
+                  Our road delivery ensures reliable transportation, connecting all regions for timely and efficient service.
+                </p>
+              </div>
+            </div>
+          </section>
 
           <h1 className="font-bold text-3xl text-center mt-12">🌹 Explore our Catalogue of Flowers below</h1>
           <div className="flex items-center mx-4 justify-between border-b border-gray-200 pb-4 pt-14 dark:border-gray-800">
@@ -95,7 +106,7 @@ export default async function Page() {
 
 
 
-          <section aria-labelledby="products-heading" className="pb-24 mx-4 pt-6">
+          <section aria-labelledby="products-heading" id="catalogue" className="pb-24 mx-4 pt-6">
             <h2 id="products-heading" className="sr-only">
               Products
             </h2>
@@ -109,6 +120,11 @@ export default async function Page() {
           </section>
           <WhatsappIcon phoneNumber='918975531211' />
         </main>
+        <div className=" border-t border-gray-200   dark:border-gray-800">
+
+ 
+        <MapSection/>
+        </div>
       </div>
     </div>
   )
