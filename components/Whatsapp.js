@@ -1,7 +1,6 @@
 // components/SocialMediaIcons.js
 "use client"
-// components/SocialMediaIcons.js
-"use client"
+
 
 import { useState } from 'react';
 
@@ -48,7 +47,7 @@ const SocialMediaIcons = ({ phoneNumber }) => {
       </div>
       <div className={`widget ${isFacebookOpen ? 'open' : ''}`}>
         {/* Add Facebook Widget or link */}
-        {/* Example: <a href="https://www.facebook.com/your_page/" target="_blank">Facebook</a> */}
+      <a href="https://www.facebook.com/people/Prasad-Flowers/pfbid0dw98kEYkUj1FvvmfwocYJR96C4ZZ2kgMKsaz4xCPquNisc1NJsjAkr5hk7WVTDF1l/" target="_blank">Facebook</a>
       </div>
       <div className="icon whatsapp" onClick={() => handleIconClick('whatsapp')}>
         <img src="/whatsapp.webp" alt="WhatsApp Icon" />
