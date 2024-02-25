@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Prasad Flowers",
+  name: "Prasad Agro",
   description: "Export quality fresh cut flowers! We offer a wide selection, with All India delivery. Buy wholesale flowers for any occasion.",
   footer: [
     { name: "Home", href: "/" },

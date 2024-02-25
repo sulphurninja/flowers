@@ -1,12 +1,13 @@
 import { client } from "@/sanity/lib/client"
 import { groq } from "next-sanity"
-
 import { SanityProduct } from "@/config/inventory"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { ProductFilters } from "@/components/product-filters"
 import { ProductGrid } from "@/components/product-grid"
 import { ProductSort } from "@/components/product-sort"
+import WhatsappIcon from '../components/Whatsapp'
+
 
 interface Props {}
 
@@ -60,6 +61,9 @@ export default async function Page() {
               <ProductGrid products={products}/>
             </div>
           </section>
+          <WhatsappIcon phoneNumber='918975531211' />
+          <WhatsappIcon phoneNumber='918975531211' />
+          <WhatsappIcon phoneNumber='918975531211' />
         </main>
       </div>
     </div>

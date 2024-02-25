@@ -15,7 +15,7 @@ import { SiteHeader } from "@/components/site-header";
 import Loader from "@/components/Loader";
 
 export const metadata: Metadata = {
-  title: siteConfig.name,
+  title: 'Prasad Agro',
   description: siteConfig.description,
   icons: {
     icon: '/favicon.ico'
